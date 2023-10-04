@@ -1257,37 +1257,6 @@ showToast(title,message,variantType){
     });
     this.dispatchEvent(event);
 }
-
-  /*  addRow(){
-        this.keyIndex+1;
-        this.duplicates =[... this.duplicates,{
-            ownerValue:this.ownerValue,
-            dateValue:this.dateValue,
-            actionValue:this.actionValue,
-            reviewerValue:this.reviewerValue,
-            additionalValue:this.additionalValue,
-            reasonValue:this.reasonValue
-            },
-        ];
-    }
-
-    deleteRow(event)
-    {  
-        //this.duplicates = this.duplicates.slice(0,-1);
-        console.log('event deletes');
-        console.log(event);
-        const index = (event.target.dataset.index);
-        console.log(index);
-        // const duplicates = this.duplicates.slice();
-        // duplicates.splice(index,1);
-        // this.duplicates = duplicates;
-        //this.duplicates = this.duplicates.reduce(index,1);
-        //this.duplicates = this.duplicates.slice(event.target.value,1);
-        //this.duplicates = this.duplicates.filter((dup,i) => i !== parseInt(index, 10));
-        //this.duplicates = this.duplicates.filter((_,i) => i !== index);
-        //this.duplicates = this.duplicates.slice(index,1);
-        this.duplicates = this.duplicates.splice(index,1);
-    }*/
     
     get disable()
     {  
@@ -1331,35 +1300,8 @@ showToast(title,message,variantType){
 
         console.log('index',this.index);
         console.log('Duplicates>'+JSON.stringify(this.duplicates));
-        // this.duplicates.push(
-        //     {
-        //     /*ownerValue:this.ownerValue,
-        //     dateValue:this.dateValue,
-        //     actionValue:this.actionValue,
-        //     reviewerValue:this.reviewerValue,
-        //     additionalValue:this.additionalValue,
-        //     reasonValue:this.reasonValue*/
-        //     ownerValue:'',
-        //     dateValue:'',
-        //     actionValue:'',
-        //     reviewerValue:'',
-        //     additionalValue:'',
-        //     reasonValue:''
-        //    }
-        // )
     }
     deleteRow(event){ 
-    //     let strIndex = event.target.dataset.recordId;
-    //   console.log('strindex>'+strIndex);
-
-    //       if(this.duplicates.length>=1){
-    //         console.log('id', JSON.stringify(this.duplicates));
-    //         this.duplicates.splice( strIndex, 1 );
-    //         //this.duplicates.splice(event.currentTarget.dataset.index,1);
-              
-    //           console.log('id', this.duplicates);
-    //           // console.log('not working',this.index);
-    //       }
         let x=event.target.title;
         console.log('deleteTitle>'+x);
         if(x=='deleteOne')
