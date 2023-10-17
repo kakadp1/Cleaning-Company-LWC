@@ -1,45 +1,352 @@
-validateInput() {
-    console.log('In Validate function');
-    var errorMessage = '';
-    var ownerFields = '';
-    var dateFields = '';
-    var naReasonFields = '';
-    var actionPlanFields = '';
-    var actionPlan2Fields = '';
-    var notAllAnswered = false;
+import { LightningElement,api, wire } from 'lwc';
+import upsertSurveyResponse from '@salesforce/apex/mma2023_QnSController.upsertSurveyResponse';
+import {ShowToastEvent} from 'lightning/platformShowToastEvent';
+import submitSurvey from '@salesforce/apex/mma2023_QnSController.submitSurvey';
+import surveyDetailStatus from '@salesforce/apex/mma2023_QnSController.SurveyDetailStatus';
+import { refreshApex } from '@salesforce/apex';
 
-    // Your existing code here
+export default class Mma2023_buttonComp extends LightningElement {
 
-    tempQues.forEach(element => {
-        // ... (Your existing code)
 
-        if (result.hasOwnProperty('actionPlan2')) {
-            if (result.actionPlan2 != null && result.actionPlan2.trim() === '') {
-                element.actionPlan2 = result.actionPlan2;
-                if (element.actionPlan2 === '') {
-                    if (actionPlan2Fields != '') {
-                        actionPlan2Fields += ', ';
-                    }
-                    actionPlan2Fields += element.srNo;
-                }
+    @api nextScreenName;
+    @api selectedQuestionIdsWithOptionId;
+    @api questions;
+    @api surveyDetailsId; 
+    @api quarter;
+    @api selectedApplication;
+    @api dpvnc=[];//nikhil
+    @api dpvc={};//nikhil
+    @api pt;//nikhil
+    @api st;//nikhil
+    @api btnlast;
+    @api enableSave;
+    @api userRole;
+    mapRecieved;
+    
+    get getlabelsave()
+    {
+        return this.btnlast==true ? 'Save':'Save & Next';
+    }
+    get getlabelnext()
+    {
+        return this.btnlast==true ? 'Submit':'Next';
+    }
+    handleSavebutton=false;
+    get saveNextDisable()
+    {
+        return this.userRole=='Auditor' && this.submitDisable==true ? false:
+               this.userRole=='Admin' && this.submitDisable==false   ? false:true;
+    }
+    get getsubmitDisable()
+    {
+        return  this.userRole=='Auditor'? true:
+                this.getlabelnext=='Submit' && this.submitDisable==true ? true:false;
+    }
+    selectedQuestionIdsWithOptionId =[];
+
+    submitDisable=false;
+    wireSurveyStatusResult=[];
+    @wire(surveyDetailStatus,{surveyDetailsId:'$surveyDetailsId'})
+    wireSurveySatus(result)
+    {
+      this.wireSurveyStatusResult=result;
+      if(result.data)
+      { 
+        console.log('wire error result>'+JSON.stringify(result));
+        console.log('wire error result>'+JSON.stringify(result.data));
+        if(result.data=='yes')
+        {
+           this.submitDisable=false;
+        }
+        else
+        {
+            this.submitDisable=true;
+        }
+      }
+      if(result.error)
+      {
+        console.log('wire error result>'+JSON.stringify(result));
+      }
+    }
+    
+
+    handleSaveAndNext(event){
+        if(event.target.label=='Save & Next')
+        {
+        console.log('surveyDetailsId-1-',this.surveyDetailsId);
+        console.log('quarter-1-',this.quarter);
+        console.log('Details',this.selectedQuestionIdsWithOptionId);
+        console.log('OBJECT Recieved in Save clicked',JSON.stringify(this.selectedQuestionIdsWithOptionId))
+        var isvalidInput = this.validateInput();
+        if(!isvalidInput){
+           return;
+        }
+        //return;
+       
+        upsertSurveyResponse({surveyQuestionResponse:this.selectedQuestionIdsWithOptionId,surveyDetailsId:this.surveyDetailsId,quarter:this.quarter,application:this.selectedApplication,parent:this.pt,subtype:this.st})
+        .then(result=>{
+            console.log('RESULT RECIEVED ',result)
+            if(result){
+                this.showToast('Success!!','Record Updated Successfully','success');
+                this.selectedQuestionIdsWithOptionId=[];
+                this.template.querySelector('[data-id="Next"]').click();
             }
+        })
+        .catch(error=>{
+            this.showToast('Error!!',error.body.message,'error');
+        })
+        this.handleSavebutton=true;
+    }
+    else
+    {
+        var isvalidInput = this.validateInput();
+        if(!isvalidInput){
+           return;
+        }
+        //return;
+       
+        upsertSurveyResponse({surveyQuestionResponse:this.selectedQuestionIdsWithOptionId,surveyDetailsId:this.surveyDetailsId,quarter:this.quarter,application:this.selectedApplication})
+        .then(result=>{
+            console.log('RESULT RECIEVED ',result)
+            if(result){
+                this.showToast('Success!!','Record Updated Successfully','success');
+                this.selectedQuestionIdsWithOptionId=[];
+            }
+        })
+        .catch(error=>{
+            this.showToast('Error!!',error.body.message,'error');
+        })
+    }
+}
+    /**
+     * Description : This method is used to navigate the user to the next tab.
+     */
+    handleNext(event)//nikhil changes to handler
+    { 
+        // if(this.nextScreenName){
+        //     let callBackMethodName = 'handle'+ this.nextScreenName ;
+        //     const selectedEvent = new CustomEvent('tabSelected', {bubbles: true,composed: true,
+        //     detail: {'callbackMethodName': callBackMethodName}});
+        //     this.dispatchEvent(selectedEvent);
+        // }
+        // console.log("Selected application>"+this.selectedApplication);
+        // console.log('quarter>'+this.quarter);
+        // console.log('question>'+this.questions)
+        // console.log('survey details>'+this.surveyDetailsId);
+        // console.log('selectesquestionidwithoption>'+this.selectedQuestionIdsWithOptionId);
+        if(event.target.label=='Next')
+        {
+        console.log('parentType>'+this.pt);
+        console.log('subtype>'+this.st);
+        console.log('depPicklist>'+this.dpvnc[0].label);
+        console.log('depPicklistvaluenew>'+this.dpvc[this.pt]);
+        let i =this.dpvnc.map(object => object.label).indexOf(this.pt);
+        let j =this.dpvnc[i].depPickList.map(object =>object.label).indexOf(this.st);
+        if (this.dpvnc[i].label == this.pt) 
+        {
+            if (this.dpvc[this.pt].includes(this.st)) {
+                let x = [];
+                x = this.dpvc[this.pt];
+                if (x.indexOf(this.st) != ((x.length) - 1)) {
+                    let y = x.indexOf(this.st) + 1;
+                    console.log(x[y]);
+                    let z = this.dpvnc[i].nflag;
+                    let cid=this.dpvnc[i].depPickList[j+1].id;
+                    this.dispatchEvent(new CustomEvent('next', { detail: { p: this.pt, s: x[y],flag:z,cFlag:cid} }));
+                    this.showToast('Moved to '+this.pt+' tab',x[y],'success')
+                }
+                else if((i+1)<this.dpvnc.length)
+                { j=0;
+                  let x=this.dpvnc[i+1].label;
+                  let y=this.dpvc[x];
+                  let z = this.dpvnc[i+1].nflag;
+                  let cid=this.dpvnc[i+1].depPickList[j].id;
+                  this.dispatchEvent(new CustomEvent('next',{detail:{p:x,s:y[0],flag:z,cFlag:cid}}));
+                  this.showToast('Moved to '+x+' tab',y[0],'success')
+                }
+                else
+                {
+                    this.showToast('No further Tabs','There are no further tabs','error')
+                }
+             }
+             else{this.showToast('No further Tabs','There are no further tabs','error')}
+        }
+    }
+    else
+    {   
+        if(confirm(`Do you want to submit the assesment ? Yow won't be able to edit assesment once it is submitted.`)==true)
+        {
+        submitSurvey({surveyDetailsId:this.surveyDetailsId})
+        .then(result=>{
+            if(result!=null){
+              this.showToast('Success!!',`Successfully Submitted Survey ${result}`,'success');
+              refreshApex(this.wireSurveyStatusResult);
+            }
+            else{
+                this.showToast('Error!!',`'All the questions are not answered. Please check.`,'error');
+            }
+        })
+        .catch(error=>{
+            this.showToast('Error!!','Error in submmitting Survey ','error');
+        })
+       
         }
 
-        // ... (Your existing code)
-    });
+    }
+}
 
-    // Your existing code here
+        
 
-    if (actionPlan2Fields != '') {
-        errorMessage += ' => Action Plan 2 is missing for question ' + actionPlan2Fields + '\r\n';
+    showToast(title,message,variantType,modeType) {
+        const event = new ShowToastEvent({
+            title: title,
+            message: message,
+            variant: variantType,
+            mode:modeType,
+        });
+        this.dispatchEvent(event);
     }
 
-    // Your existing code here
+    /*
+    * Description : This method is used to validate the inputs.
+    */
+    validateInput(){  
+        console.log('In Validate function');
+        var errorMessage='';
+        var ownerFields = '';
+        var dateFields = '';
+        var naReasonFields = '';
+        var actionPlanFields = '';
+        var actionPlan1Fields = '';
+        var notAllAnswered=false;
+       
+        //console.log('Details',this.selectedQuestionIdsWithOptionId);
+        var tempResults = JSON.parse(JSON.stringify(this.selectedQuestionIdsWithOptionId));
+        console.log('tempresults',tempResults);
+        console.log('questions-button',this.questions)
+       var tempQues = JSON.parse(JSON.stringify(this.questions));
+       console.log('tmp Ques',tempQues);
+       tempQues.forEach(element => {
+        
+            var resultlists=tempResults.filter(obj => obj.questionId === element.id);
+            console.log('rsultlist',resultlists)
+            if(resultlists != undefined){
+                resultlists.forEach(result=>{
+                if(result.hasOwnProperty('selectedOption')){
+                            element.selectedOption = result.selectedOption;
+                        }
+                        if(result.hasOwnProperty('reasonForNotApplicable')){
+                             element.reasonForNotApplicable = result.reasonForNotApplicable;
+                        }
+                        if(result.hasOwnProperty('reviewerComments')){
+                         element.reviewerComments = result.reviewerComments;
+                         }
+         
+                         if(result.hasOwnProperty('actionPlan')){
+                            //if(result.actionPlan!=null && result.actionPlan!='' && result.actionPlan!=undefined)
+                            console.log('elementonactionplan'+element.actionPlan);
+                               element.actionPlan = result.actionPlan;
+                             }
+                            //  else{
+                            //    element.actionPlan='';
+                            //  }
+                         if (result.hasOwnProperty('actionPlan1')) {
+                            if(element.actionPlan1 == '' || element.actionPlan1 == null) {
+                                    element.actionPlan1 = result.actionPlan1;
+                                    if (element.actionPlan1 == '') {
+                                        if (actionPlan1Fields != '') {
+                                            actionPlan1Fields += ', ';
+                                        }
+                                        actionPlan1Fields += element.srNo;
+                                    }
+                                }
+                            }
 
-    if (errorMessage != '') {
-        console.log('Error Messages');
-        this.showToast('Error!!', errorMessage, 'error', 'sticky');
-        return false;
+                         if(result.hasOwnProperty('dateToBeCompleted')){
+                          //if(result.dateToBeCompleted!=null && result.dateToBeCompleted!='' && result.dateToBeCompleted!=undefined)
+                           element.dateToBeCompleted = result.dateToBeCompleted;
+                          }
+                        //   else{
+                        //     element.dateToBeCompleted=null;
+                        //  }
+                        if(result.hasOwnProperty('ownerName')){
+                       // if(result.ownerName!=null && result.ownerName!='' && result.ownerName!=undefined)
+                         element.ownerName = result.ownerName;
+                        }
+                        // else{
+                        //     element.ownerName='';
+                        //  }
+                 
+            });
+        }
+            console.log('<<<<element:',element);
+             if(element.selectedOption ==''){
+                notAllAnswered = true;
+
+             }
+
+             if(element.selectedOption != '' && element.selectedOption === '0' && (element.reasonForNotApplicable == ''||element.reasonForNotApplicable == null)){
+                 if(naReasonFields != ''){
+                     naReasonFields+=', ';
+                 }
+               // naReasonFields+= element.orderNumber;
+                naReasonFields+= element.srNo;
+             }
+             if(element.selectedOption != '' && element.selectedOption != '0' && element.selectedOption !='5'){
+                 if(element.ownerName == '' || element.ownerName == null){
+                    if(ownerFields != ''){
+                        ownerFields+=', ';
+                    }
+                    //ownerFields+= element.orderNumber;
+                    ownerFields+= element.srNo;
+                 }
+                 if(element.actionPlan == '' || element.actionPlan == null){
+                    if(actionPlanFields != ''){
+                        actionPlanFields+=', ';
+                    }
+                    //actionPlanFields+= element.orderNumber;
+                    actionPlanFields+= element.srNo;
+                 }
+                 if(element.dateToBeCompleted == null){
+                    if(dateFields != ''){
+                        dateFields+=', ';
+                    }
+                    //dateFields+= element.orderNumber;
+                    dateFields+= element.srNo;
+                 }
+                 
+             }
+        });
+        
+        //Added by Prathamesh
+        if(this.userRole == 'Admin'){
+        if(notAllAnswered){
+            errorMessage = 'All the questions are not answered. Please check. \r\n';
+        }
+        if(dateFields !='')  {
+            errorMessage += ' => Date to be Completed is missing for question '+ dateFields + '\r\n';
+         }
+         if(actionPlanFields!=''){
+            errorMessage += ' => Action Plan is missing for question '+ actionPlanFields + '\r\n';
+         }
+         if(actionPlan1Fields!=''){
+            errorMessage += ' => Action Plan is missing for question '+ actionPlan1Fields + '\r\n';
+         }
+         if(ownerFields !=''){
+            errorMessage += ' => Owner Name is missing for question '+ ownerFields + '\r\n';
+         }
+
+         if(naReasonFields !=''){
+            errorMessage += ' => Reason for Not Applicable is missing for question '+ naReasonFields + '\r\n';
+         }
+         console.log('other error');
+        
+        if(errorMessage !=''){
+            console.log('Error Messages');
+            this.showToast('Error!!',errorMessage,'error','sticky');
+            return false;
+         }
+        }
+         return true;
     }
-    return true;
 }
