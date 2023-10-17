@@ -1,125 +1,38 @@
-validateInput(){  
-        console.log('In Validate function');
-        var errorMessage='';
-        var ownerFields = '';
-        var dateFields = '';
-        var naReasonFields = '';
-        var actionPlanFields = '';
-        var notAllAnswered=false;
-       
-        //console.log('Details',this.selectedQuestionIdsWithOptionId);
-        var tempResults = JSON.parse(JSON.stringify(this.selectedQuestionIdsWithOptionId));
-        console.log('tempresults',tempResults);
-        console.log('questions-button',this.questions)
-       var tempQues = JSON.parse(JSON.stringify(this.questions));
-       console.log('tmp Ques',tempQues);
-       tempQues.forEach(element => {
-        
-            var resultlists=tempResults.filter(obj => obj.questionId === element.id);
-            console.log('rsultlist',resultlists)
-            if(resultlists != undefined){
-                resultlists.forEach(result=>{
-                if(result.hasOwnProperty('selectedOption')){
-                            element.selectedOption = result.selectedOption;
-                        }
-                        if(result.hasOwnProperty('reasonForNotApplicable')){
-                             element.reasonForNotApplicable = result.reasonForNotApplicable;
-                        }
-                        if(result.hasOwnProperty('reviewerComments')){
-                         element.reviewerComments = result.reviewerComments;
-                         }
-         
-                         if(result.hasOwnProperty('actionPlan')){
-                            //if(result.actionPlan!=null && result.actionPlan!='' && result.actionPlan!=undefined)
-                            console.log('elementonactionplan'+element.actionPlan);
-                               element.actionPlan = result.actionPlan;
-                             }
-                            //  else{
-                            //    element.actionPlan='';
-                            //  }
+validateInput() {
+    console.log('In Validate function');
+    var errorMessage = '';
+    var actionPlan2Fields = '';
 
+    // Your existing code here
 
-                         if(result.hasOwnProperty('dateToBeCompleted')){
-                          //if(result.dateToBeCompleted!=null && result.dateToBeCompleted!='' && result.dateToBeCompleted!=undefined)
-                           element.dateToBeCompleted = result.dateToBeCompleted;
-                          }
-                        //   else{
-                        //     element.dateToBeCompleted=null;
-                        //  }
-                        if(result.hasOwnProperty('ownerName')){
-                       // if(result.ownerName!=null && result.ownerName!='' && result.ownerName!=undefined)
-                         element.ownerName = result.ownerName;
-                        }
-                        // else{
-                        //     element.ownerName='';
-                        //  }
-                 
-            });
-        }
-            console.log('element:',element);
-             if(element.selectedOption ==''){
-                notAllAnswered = true;
+    tempQues.forEach(element => {
+        // ... (Your existing code)
 
-             }
-
-             if(element.selectedOption != '' && element.selectedOption === '0' && (element.reasonForNotApplicable == ''||element.reasonForNotApplicable == null)){
-                 if(naReasonFields != ''){
-                     naReasonFields+=', ';
-                 }
-               // naReasonFields+= element.orderNumber;
-                naReasonFields+= element.srNo;
-             }
-             if(element.selectedOption != '' && element.selectedOption != '0' && element.selectedOption !='5'){
-                 if(element.ownerName == '' || element.ownerName == null){
-                    if(ownerFields != ''){
-                        ownerFields+=', ';
+        if (result.hasOwnProperty('actionPlan2')) {
+            if (result.actionPlan2 != null && result.actionPlan2 != '') {
+                element.actionPlan2 = result.actionPlan2;
+                if (element.actionPlan2 == '') {
+                    if (actionPlan2Fields != '') {
+                        actionPlan2Fields += ', ';
                     }
-                    //ownerFields+= element.orderNumber;
-                    ownerFields+= element.srNo;
-                 }
-                 if(element.actionPlan == '' || element.actionPlan == null){
-                    if(actionPlanFields != ''){
-                        actionPlanFields+=', ';
-                    }
-                    //actionPlanFields+= element.orderNumber;
-                    actionPlanFields+= element.srNo;
-                 }
-                 if(element.dateToBeCompleted == null){
-                    if(dateFields != ''){
-                        dateFields+=', ';
-                    }
-                    //dateFields+= element.orderNumber;
-                    dateFields+= element.srNo;
-                 }
-                 
-             }
-        });
-        
-        //Added by Prathamesh
-        if(this.userRole == 'Admin'){
-        if(notAllAnswered){
-            errorMessage = 'All the questions are not answered. Please check. \r\n';
+                    actionPlan2Fields += element.srNo;
+                }
+            }
         }
-        if(dateFields !='')  {
-            errorMessage += ' => Date to be Completed is missing for question '+ dateFields + '\r\n';
-         }
-         if(actionPlanFields!=''){
-            errorMessage += ' => Action Plan is missing for question '+ actionPlanFields + '\r\n';
-         }
-         if(ownerFields !=''){
-            errorMessage += ' => Owner Name is missing for question '+ ownerFields + '\r\n';
-         }
 
-         if(naReasonFields !=''){
-            errorMessage += ' => Reason for Not Applicable is missing for question '+ naReasonFields + '\r\n';
-         }
-         console.log('other error');
-        
-        if(errorMessage !=''){console.log('Error Messages');
-            this.showToast('Error!!',errorMessage,'error','sticky');
-            return false;
-         }
-        }
-         return true;
+        // ... (Your existing code)
+    });
+
+    // Your existing code here
+
+    if (actionPlan2Fields != '') {
+        errorMessage += ' => Action Plan 2 is missing for question ' + actionPlan2Fields + '\r\n';
     }
+
+    if (errorMessage != '') {
+        console.log('Error Messages');
+        this.showToast('Error!!', errorMessage, 'error', 'sticky');
+        return false;
+    }
+    return true;
 }
