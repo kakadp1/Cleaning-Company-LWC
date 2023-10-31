@@ -31,7 +31,7 @@ global class mma2023_AssessorEmailNotifications implements Database.Batchable<sO
             }                        
 		}
 
-		List<Survey_Taker__c> allSurveyTakers =[SELECT Id,NAME,Survey__c,Role__c,Assessor__c,Assessor__r.Name,Assessor__r.Email,Survey__r.Name, Manager_Email__c, User_Email__c FROM Survey_Taker__c WHERE Survey__c IN:setOfSurveyId AND Survey__r.Name = 'Maturity Model Assessment SBE' AND Role__c ='Admin'];
+		List<Survey_Taker__c> allSurveyTakers =[SELECT Id,NAME,Survey__c,Role__c,Assessor__c,Assessor__r.Name,Assessor__r.Email,Survey__r.Name, Manager_Email__c, User_Email__c FROM Survey_Taker__c WHERE Survey__c IN:setOfSurveyId AND Role__c ='Admin'];
 		for(Survey_Taker__c eachSurveyTaker :allSurveyTakers){
     		if(!allAdminEmailFromEachSurveyMap.containsKey(eachSurveyTaker.Survey__c)){
         		allAdminEmailFromEachSurveyMap.put(eachSurveyTaker.Survey__c,new List<String>{eachSurveyTaker.User_Email__c});
@@ -43,15 +43,20 @@ global class mma2023_AssessorEmailNotifications implements Database.Batchable<sO
         
         List<Survey_Taker__c> allSurveyTakersfor10Days =[SELECT Id,NAME,Survey__c,Role__c,Assessor__c,Assessor__r.Name,Assessor__r.Email,Survey__r.Name, Manager_Email__c, User_Email__c FROM Survey_Taker__c WHERE Survey__c IN:setOfSurveyIdFor10Days AND Role__c ='Admin'];
         for(Survey_Taker__c eachSurveyTaker :allSurveyTakersfor10Days){
+            system.debug('Assessor Email added '+eachSurveyTaker.User_Email__c);
+            system.debug('Manager Email added '+eachSurveyTaker.Manager_Email__c);
     		if(!allAdminEmailFromEachSurveyMapFor10Days.containsKey(eachSurveyTaker.Survey__c)){
         		allAdminEmailFromEachSurveyMapFor10Days.put(eachSurveyTaker.Survey__c,new List<String>{eachSurveyTaker.User_Email__c});
     		}
 			else{
         		allAdminEmailFromEachSurveyMapFor10Days.get(eachSurveyTaker.Survey__c).add(eachSurveyTaker.User_Email__c);
     		}
-            if(!allManagerEmailFromEachSurveyMapFor10Days.containsKey(eachSurveyTaker.Survey__c) ){
+            if(!allManagerEmailFromEachSurveyMapFor10Days.containsKey(eachSurveyTaker.Survey__c) && eachSurveyTaker.Manager_Email__c != null){
+    
         		allManagerEmailFromEachSurveyMapFor10Days.put(eachSurveyTaker.Survey__c,new List<String>{eachSurveyTaker.Manager_Email__c});
+                system.debug('Manager Email added 1 '+eachSurveyTaker.Manager_Email__c);
     		}
+
 			else{
                 if(eachSurveyTaker.Manager_Email__c != null){
                     allManagerEmailFromEachSurveyMapFor10Days.get(eachSurveyTaker.Survey__c).add(eachSurveyTaker.Manager_Email__c);
@@ -67,7 +72,7 @@ global class mma2023_AssessorEmailNotifications implements Database.Batchable<sO
 			else{
         		allAdminEmailFromEachSurveyMapFor15Days.get(eachSurveyTaker.Survey__c).add(eachSurveyTaker.User_Email__c);
     		}
-            if(!allManagerEmailFromEachSurveyMapFor15Days.containsKey(eachSurveyTaker.Survey__c) ){
+            if(!allManagerEmailFromEachSurveyMapFor15Days.containsKey(eachSurveyTaker.Survey__c) && eachSurveyTaker.Manager_Email__c != null ){
         		allManagerEmailFromEachSurveyMapFor15Days.put(eachSurveyTaker.Survey__c,new List<String>{eachSurveyTaker.Manager_Email__c});
     		}
 			else{
@@ -78,78 +83,94 @@ global class mma2023_AssessorEmailNotifications implements Database.Batchable<sO
         }
         
         sendMailToAdmins(allSurveyTakers, allAdminEmailFromEachSurveyMap, owaId);
-        sendMailToAdminsfor10Days(allSurveyTakers, allAdminEmailFromEachSurveyMapFor10Days, allManagerEmailFromEachSurveyMapFor10Days, owaId);
-        sendMailToAdminsfor15Days(allSurveyTakers, allAdminEmailFromEachSurveyMapFor15Days, allManagerEmailFromEachSurveyMapFor15Days, owaId);
+        sendMailToAdminsfor10Days(allSurveyTakersfor10Days, allAdminEmailFromEachSurveyMapFor10Days, allManagerEmailFromEachSurveyMapFor10Days, owaId);
+        sendMailToAdminsfor15Days(allSurveyTakersFor15Days, allAdminEmailFromEachSurveyMapFor15Days, allManagerEmailFromEachSurveyMapFor15Days, owaId);
     }
     
     global void finish(Database.BatchableContext BC){
     }
 
     public void sendMailToAdmins(List<Survey_Taker__c> allSurvTakers,Map<Id,List<String>> surveyIdEmailMap, String addressId){
-        System.debug('ALL TAKERS SIZE '+allSurvTakers.size());
+        System.debug('ALL TAKERS SIZE 5 Days '+allSurvTakers.size());
         list<Messaging.SingleEmailMessage> allEmailsToBeSend=new list<Messaging.SingleEmailMessage>();      
         for(Survey_Taker__c eachSurveyTaker:allSurvTakers){
             Messaging.SingleEmailMessage eachEmail= new Messaging.SingleEmailMessage();
             list<string> stLst=surveyIdEmailMap.get(eachSurveyTaker.Survey__c);
 			System.debug('ALL emails '+stLst);
             eachEmail.setToAddresses(stLst);
-            eachEmail.setSubject('Start of self-assessment for your ' +eachSurveyTaker.Survey__r.Name + ' engagement');             
-            eachEmail.setHtmlBody('<font face = "Arial">Dear '+eachSurveyTaker.Assessor__r.Name+', <br/><br/> Our records shows that you have not yet started the self-assessment. Please plan to complete the same at your earliest. You may inform us well in advance if there are any challenges in completing the self-assessment and needs our attention. <br/><br/>Click <a href="'+ System.Label.MMA_LINK + '">here</a>  to start the Assessment.<br/><br/>Regards,<br/>SGS Continuous Improvement Team </font>');             
+            eachEmail.setSubject('[Reminder 1] Start of self-assessment for your ' +eachSurveyTaker.Survey__r.Name + ' engagement');             
+            eachEmail.setHtmlBody('<font face = "Arial">Dear Assessor (s)'+', <br/><br/> Our records shows that you have not yet started the self-assessment. Please plan to complete the same at your earliest. You may inform us well in advance if there are any challenges in completing the self-assessment and needs our attention. <br/><br/>Click <a href="'+ System.Label.MMA_LINK + '">here</a>  to start the Assessment.<br/><br/>Regards,<br/>SGS Continuous Improvement Team </font>');             
             eachEmail.setOrgWideEmailAddressId(addressId);           
             allEmailsToBeSend.add(eachEmail);
-        }
+        
+    }
         Messaging.sendEmail(allEmailsToBeSend);
 
 	}
     
         public void sendMailToAdminsfor10Days(List<Survey_Taker__c> allSurvTakers,Map<Id,List<String>> surveyIdEmailMap, Map<Id,List<String>> surveyIdManagerEmailMap, String addressId){
-        System.debug('ALL TAKERS SIZE '+allSurvTakers.size());
+        System.debug('ALL TAKERS SIZE 10 Days '+allSurvTakers.size());
         list<Messaging.SingleEmailMessage> allEmailsToBeSend=new list<Messaging.SingleEmailMessage>();      
         for(Survey_Taker__c eachSurveyTaker:allSurvTakers){
             Messaging.SingleEmailMessage eachEmail= new Messaging.SingleEmailMessage();
             list<string> stLst=surveyIdEmailMap.get(eachSurveyTaker.Survey__c);
+            System.debug('Manager Email map value> '+surveyIdManagerEmailMap);
+            System.debug('Survey Name '+eachSurveyTaker.Survey__c);
+            System.debug('Manager email check >>'+surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c));
+            // string managerCC = surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c);
+            // list<string> stCcLst=managerCC.split(',');
+            
+            System.debug('ALL stcclst emails 10 Days '+surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c));
+            System.debug('ALL stlst emails 10 Days '+stLst);
+            if(stLst!= null){
+            // System.debug('ALL emails 10 Days '+surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c).size());
+            // System.debug('ALL CC emails 10 Days '+surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c));
             eachEmail.setToAddresses(stLst);
-            list<string> stCcLst=surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c);
-			System.debug('ALL emails '+stCcLst.size());
-            System.debug('ALL CC emails '+stCcLst);
-            eachEmail.setToAddresses(stLst);
-            if(stCcLst != null){
-                System.debug('ALL CC emails '+stCcLst);
-                eachEmail.setCcAddresses(stCcLst);
-            }            
-            eachEmail.setSubject('Start of self-assessment for your ' +eachSurveyTaker.Survey__r.Name + ' engagement');             
-            eachEmail.setHtmlBody('<font face = "Arial">Dear '+eachSurveyTaker.Assessor__r.Name+', <br/><br/> Our records shows that you have not yet started the self-assessment. Please plan to complete the same at your earliest. You may inform us well in advance if there are any challenges in completing the self-assessment and needs our attention. <br/><br/>Click <a href="'+ System.Label.MMA_LINK + '">here</a>  to start the Assessment.<br/><br/>Regards,<br/>SGS Continuous Improvement Team </font>');             
+            
+            if(surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c) != null){
+                System.debug('ALL CC emails 10 Days 11'+surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c));
+                eachEmail.setCcAddresses(surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c));
+            }          
+            eachEmail.setSubject('[Reminder 2] Start of self-assessment for your ' +eachSurveyTaker.Survey__r.Name + ' engagement');             
+            eachEmail.setHtmlBody('<font face = "Arial">Dear Assessor (s)'+', <br/><br/> Our records shows that you have not yet started the self-assessment. Please plan to complete the same at your earliest. You may inform us well in advance if there are any challenges in completing the self-assessment and needs our attention. <br/><br/>Click <a href="'+ System.Label.MMA_LINK + '">here</a>  to start the Assessment.<br/><br/>Regards,<br/>SGS Continuous Improvement Team </font>');             
             eachEmail.setOrgWideEmailAddressId(addressId);           
             allEmailsToBeSend.add(eachEmail);
+        
         }
-        Messaging.sendEmail(allEmailsToBeSend);
-
-	}
+    }
+    if(allEmailsToBeSend != null){
+    Messaging.sendEmail(allEmailsToBeSend);
+    }
+        
+}
     
         public void sendMailToAdminsfor15Days(List<Survey_Taker__c> allSurvTakers,Map<Id,List<String>> surveyIdEmailMap, Map<Id,List<String>> surveyIdManagerEmailMap, String addressId){
-        System.debug('ALL TAKERS SIZE '+allSurvTakers.size());
+        System.debug('ALL TAKERS SIZE 15 Days '+allSurvTakers.size());
         list<Messaging.SingleEmailMessage> allEmailsToBeSend=new list<Messaging.SingleEmailMessage>();      
         for(Survey_Taker__c eachSurveyTaker:allSurvTakers){
             Messaging.SingleEmailMessage eachEmail= new Messaging.SingleEmailMessage();
             list<string> stLst=surveyIdEmailMap.get(eachSurveyTaker.Survey__c);
-            list<string> stCcLst=surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c);
+            // list<string> stCcLst=surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c);
             list<string> stBccLst=new list<string>();
-            stBccLst.add('virendra_s_yadav@optum.com');
-			System.debug('ALL emails '+stLst);
+            stBccLst.add('prathamesh.kakad@optum.com');
+			System.debug('ALL emails 15 Days '+stLst);
+            if(stLst!= null){
             eachEmail.setToAddresses(stLst);
-            if(stCcLst != null){
-                System.debug('ALL CC emails '+stCcLst);
-                eachEmail.setCcAddresses(stCcLst);
-            }  
+            if(surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c) != null){
+                System.debug('ALL CC emails 10 Days 11'+surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c));
+                eachEmail.setCcAddresses(surveyIdManagerEmailMap.get(eachSurveyTaker.Survey__c));
+            } 
             eachEmail.setBccAddresses(stBccLst);
-            eachEmail.setSubject('Start of self-assessment for your ' +eachSurveyTaker.Survey__r.Name + ' engagement');             
-            eachEmail.setHtmlBody('<font face = "Arial">Dear '+eachSurveyTaker.Assessor__r.Name+', <br/><br/> Our records shows that you have not yet started the self-assessment. Please plan to complete the same at your earliest. Your assessment will be blocked if no action taken. Reach out to Maturity Model Admin to unblock the assessment. <br/><br/>Click <a href="'+ System.Label.MMA_LINK + '">here</a>  to start the Assessment.<br/><br/>Regards,<br/>SGS Continuous Improvement Team </font>');             
+            eachEmail.setSubject('[Reminder 3] Start of self-assessment for your ' +eachSurveyTaker.Survey__r.Name + ' engagement');             
+            eachEmail.setHtmlBody('<font face = "Arial">Dear Assessor (s)'+', <br/><br/> Our records shows that you have not yet started the self-assessment. Please plan to complete the same at your earliest. Your assessment will be blocked if no action taken. Reach out to Maturity Model Admin to unblock the assessment. <br/><br/>Click <a href="'+ System.Label.MMA_LINK + '">here</a>  to start the Assessment.<br/><br/>Regards,<br/>SGS Continuous Improvement Team </font>');             
             eachEmail.setOrgWideEmailAddressId(addressId);           
             allEmailsToBeSend.add(eachEmail);
-        }
+            }
+    }
+    if(allEmailsToBeSend != null){
         Messaging.sendEmail(allEmailsToBeSend);
-
-	}
+    }
+    }
     //Added by Prathamesh
     global void execute(SchedulableContext sc){
         mma2023_AssessorEmailNotifications batch = new mma2023_AssessorEmailNotifications();
