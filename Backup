@@ -1662,39 +1662,39 @@
             <label>Previously Met - Prev</label>
         </rules>
     </decisions>
-    <description>REQ-001379 : Remove 2 manual DB checks from Reval app</description>
+    <description>REQ-001378 : Reval DB Checks to be Automated</description>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_10_myRule_1_A2_0727346566</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_11_myRule_1_A1_3943947484</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_14_myRule_13_A8_3894177193</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -1711,23 +1711,23 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_16_myRule_13_A6_6054934055</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_17_myRule_13_A5_2497823859</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -1744,111 +1744,111 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_19_myRule_13_A3_1055417598</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_20_myRule_13_A2_7037454445</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_21_myRule_13_A1_6922050434</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_24_myRule_23_A7_1270798888</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_25_myRule_23_A6_9068416546</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_26_myRule_23_A5_7710387957</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_27_myRule_23_A4_2253972469</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_28_myRule_23_A3_6035157998</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_29_myRule_23_A2_6271898649</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_2_myRule_1_A10_7658993734</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -1865,34 +1865,34 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_33_myRule_32_A7_4367331338</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_34_myRule_32_A6_5520860586</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_35_myRule_32_A5_6350878476</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -1909,78 +1909,78 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_37_myRule_32_A3_3596892622</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_38_myRule_32_A2_4909424326</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_39_myRule_32_A1_3528632968</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_3_myRule_1_A9_6145229597</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_42_myRule_41_A9_0700520773</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_43_myRule_41_A8_0489133423</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_44_myRule_41_A7_9477873679</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -2008,89 +2008,89 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_47_myRule_41_A4_2759738340</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_48_myRule_41_A3_2049183158</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_49_myRule_41_A2_0576571484</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_4_myRule_1_A8_2057461294</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_50_myRule_41_A1_8035607569</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_53_myRule_52_A8_0669832512</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_54_myRule_52_A7_7938067728</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_55_myRule_52_A6_1546067968</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -2107,89 +2107,89 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_57_myRule_52_A4_7120285819</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_58_myRule_52_A3_9188925375</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_59_myRule_52_A2_8586951258</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_5_myRule_1_A7_4749250644</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_60_myRule_52_A1_9695556467</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_63_myRule_62_A10_0935183767</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_64_myRule_62_A9_6037644262</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_65_myRule_62_A8_0076035649</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -2206,45 +2206,45 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_67_myRule_62_A6_7124015917</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_68_myRule_62_A5_4866185075</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_69_myRule_62_A4_2742167160</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_6_myRule_1_A6_0391419737</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -2261,34 +2261,34 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_71_myRule_62_A2_5714369125</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_72_myRule_62_A1_8382650555</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_75_myRule_74_A10_4431746696</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -2316,34 +2316,34 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_78_myRule_74_A7_1837927159</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_79_myRule_74_A6_3416629043</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_7_myRule_1_A5_6683653558</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -2360,12 +2360,12 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_81_myRule_74_A4_5142514869</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
@@ -2404,58 +2404,25 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_87_myRule_86_A3_9402592322</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
     <formulas>
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
+                <stringValue>$Label.Databasecheck_Automated </stringValue>
             </value>
         </processMetadataValues>
         <name>formula_88_myRule_86_A2_9198949346</name>
         <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
+        <expression>{!$Label.Databasecheck_Automated}</expression>
     </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_89_myRule_86_A1_9255644052</name>
-        <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_8_myRule_1_A4_4094074963</name>
-        <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
-    </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>$Label.Databasecheck_Manual </stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_9_myRule_1_A3_7865804149</name>
-        <dataType>String</dataType>
-        <expression>{!$Label.Databasecheck_Manual}</expression>
-    </formulas>
-    <interviewLabel>Manual_Database_Check_Creation_Part_2-23_InterviewLabel</interviewLabel>
+    <interviewLabel>Manual_Database_Check_Creation_Part_2-22_InterviewLabel</interviewLabel>
     <label>E&amp;R: Revalidation Database Checks 2</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -2494,6 +2461,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -2518,36 +2521,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -2624,6 +2597,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -2648,36 +2657,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -2754,6 +2733,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>PEC States Files</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -2778,36 +2793,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>PEC States Files</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -2884,6 +2869,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Massachusetts Division of Health Professions Licensure (DHPLLV)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -2908,36 +2929,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Division of Health Professionals Licensure License Verification (DHPLLV)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -3144,6 +3135,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -3174,42 +3201,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -3298,6 +3289,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>System for Award Management (SAM)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -3328,42 +3355,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>System for Award Management (SAM)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -3603,6 +3594,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -3627,36 +3654,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -3884,6 +3881,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>MA Secretary of Commerce – Corporate Database Check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -3908,36 +3941,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Corporate Database/Social Security Number Verification Service</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -4014,6 +4017,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -4038,36 +4077,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -4144,6 +4153,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>PEC States Files</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -4168,36 +4213,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>PEC States Files</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -4534,6 +4549,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -4564,42 +4615,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -4688,6 +4703,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Public Health (DPH)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -4718,42 +4769,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Public Health (DPH)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -4842,6 +4857,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>System for Award Management (SAM)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -4872,42 +4923,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>System for Award Management (SAM)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -4996,6 +5011,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5020,36 +5071,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -5126,6 +5147,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>MA Secretary of Commerce – Corporate Database Check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5150,36 +5207,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Corporate Database/Social Security Number Verification Service</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -5256,6 +5283,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5280,36 +5343,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -5386,6 +5419,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>PEC States Files</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5410,36 +5479,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>PEC States Files</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -5516,6 +5555,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Public Health (DPH)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5540,36 +5615,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Public Health (DPH)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -5646,6 +5691,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5676,42 +5757,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -5797,6 +5842,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>System for Award Management (SAM)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5827,42 +5908,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>System for Award Management (SAM)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -5951,6 +5996,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -5975,36 +6056,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -6081,6 +6132,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>MA Secretary of Commerce – Corporate Database Check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -6105,36 +6192,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Corporate Database/Social Security Number Verification Service</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -6211,6 +6268,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -6235,36 +6328,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -6341,6 +6404,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>PEC States Files</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -6365,36 +6464,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>PEC States Files</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -6601,6 +6670,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -6631,42 +6736,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -6752,6 +6821,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>System for Award Management (SAM)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -6782,42 +6887,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>System for Award Management (SAM)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -6906,6 +6975,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -6930,36 +7035,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -7036,6 +7111,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>MA Secretary of Commerce – Corporate Database Check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -7060,36 +7171,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Corporate Database/Social Security Number Verification Service</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -7166,6 +7247,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -7190,36 +7307,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -7296,6 +7383,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>PEC States Files</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -7320,36 +7443,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>PEC States Files</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -7426,6 +7519,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Public Health (DPH)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -7450,36 +7579,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Public Health (DPH)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -7816,6 +7915,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -7846,42 +7981,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -7967,6 +8066,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>System for Award Management (SAM)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -7997,42 +8132,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>System for Award Management (SAM)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -8121,6 +8220,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -8145,36 +8280,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -8251,6 +8356,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>MA Secretary of Commerce – Corporate Database Check</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -8275,36 +8416,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Corporate Database/Social Security Number Verification Service</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -8381,6 +8492,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -8405,36 +8552,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -8511,6 +8628,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>PEC States Files</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -8535,36 +8688,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>PEC States Files</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -8641,6 +8764,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>Department of Public Health (DPH)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -8665,36 +8824,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>Department of Public Health (DPH)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -8901,6 +9030,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -8931,42 +9096,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -9052,6 +9181,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>System for Award Management (SAM)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -9082,42 +9247,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideReferenceTo</name>
-                <value>
-                    <stringValue></stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>System for Award Management (SAM)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -9206,6 +9335,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -9230,36 +9395,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -9381,7 +9516,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -9396,7 +9531,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>Division of Professional Licensure (DPL)</stringValue>
             </value>
@@ -9529,7 +9664,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -9538,9 +9673,9 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
-                <stringValue>Corporate Database/Social Security Number Verification Service</stringValue>
+                <stringValue>MA Secretary of Commerce – Corporate Database Check</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -9659,7 +9794,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -9668,7 +9803,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
@@ -9789,7 +9924,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -9798,7 +9933,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
@@ -9919,7 +10054,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -9928,7 +10063,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>PEC States Files</stringValue>
             </value>
@@ -10186,7 +10321,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -10201,7 +10336,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>System for Award Management (SAM)</stringValue>
             </value>
@@ -10292,6 +10427,42 @@
             <processMetadataValues>
                 <name>dataType</name>
                 <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>isRequired</name>
+                <value>
+                    <booleanValue>false</booleanValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideLabel</name>
+                <value>
+                    <stringValue>Automated Database</stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>leftHandSideReferenceTo</name>
+                <value>
+                    <stringValue></stringValue>
+                </value>
+            </processMetadataValues>
+            <processMetadataValues>
+                <name>rightHandSideType</name>
+                <value>
+                    <stringValue>Picklist</stringValue>
+                </value>
+            </processMetadataValues>
+            <field>Automated_Database__c</field>
+            <value>
+                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <processMetadataValues>
+                <name>dataType</name>
+                <value>
                     <stringValue>ID</stringValue>
                 </value>
             </processMetadataValues>
@@ -10316,36 +10487,6 @@
             <field>LTMS_Tracking_Number__c</field>
             <value>
                 <elementReference>myVariable_current.Id</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <processMetadataValues>
-                <name>dataType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>isRequired</name>
-                <value>
-                    <booleanValue>false</booleanValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>leftHandSideLabel</name>
-                <value>
-                    <stringValue>Manual Database</stringValue>
-                </value>
-            </processMetadataValues>
-            <processMetadataValues>
-                <name>rightHandSideType</name>
-                <value>
-                    <stringValue>Picklist</stringValue>
-                </value>
-            </processMetadataValues>
-            <field>Manual_Database__c</field>
-            <value>
-                <stringValue>National Plan and Provider Enumeration System (NPPES)</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -10467,7 +10608,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -10482,7 +10623,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>System for Award Management (SAM)</stringValue>
             </value>
@@ -10615,7 +10756,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -10624,7 +10765,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>Department of Industrial Accident’s – Debarment List</stringValue>
             </value>
@@ -10745,7 +10886,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -10754,7 +10895,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>PEC States Files</stringValue>
             </value>
@@ -10875,7 +11016,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -10884,7 +11025,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>Division of Professional Licensure (DPL)</stringValue>
             </value>
@@ -11271,7 +11412,7 @@
             <processMetadataValues>
                 <name>leftHandSideLabel</name>
                 <value>
-                    <stringValue>Manual Database</stringValue>
+                    <stringValue>Automated Database</stringValue>
                 </value>
             </processMetadataValues>
             <processMetadataValues>
@@ -11286,7 +11427,7 @@
                     <stringValue>Picklist</stringValue>
                 </value>
             </processMetadataValues>
-            <field>Manual_Database__c</field>
+            <field>Automated_Database__c</field>
             <value>
                 <stringValue>CMS Medicare Exclusion File (MedFile)</stringValue>
             </value>
